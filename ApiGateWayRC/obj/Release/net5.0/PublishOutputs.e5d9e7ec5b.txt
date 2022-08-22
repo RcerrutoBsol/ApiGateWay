@@ -1,0 +1,16 @@
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\ApiGateWayRC.exe
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\appsettings.Development.json
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\appsettings.json
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\ocelot.json
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\ApiGateWayRC.dll
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\ApiGateWayRC.deps.json
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\ApiGateWayRC.runtimeconfig.json
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\ApiGateWayRC.pdb
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\FluentValidation.dll
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\Newtonsoft.Json.dll
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\Newtonsoft.Json.Bson.dll
+C:\Users\rcerruto\source\repos\ApiGateWayRC\ApiGateWayRC\obj\Docker\publish\Ocelot.dll

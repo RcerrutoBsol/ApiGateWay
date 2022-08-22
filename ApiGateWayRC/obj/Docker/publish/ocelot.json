@@ -1,0 +1,38 @@
+{
+  "Aggregates": [
+    {
+      "UpstreamPathTemplate": "/api/users-Posts",
+      "RouteKeys": [ "users", "posts" ],
+      "Aggregator": "UsersPostsAggregator"
+    }
+  ],
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/users",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jsonplaceholder.typicode.com",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/users",
+        "key": "users"
+    },
+    {
+      "UpstreamPathTemplate": "/api/posts",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jsonplaceholder.typicode.com",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/posts",
+        "key": "posts"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44388"
+  }
+}
