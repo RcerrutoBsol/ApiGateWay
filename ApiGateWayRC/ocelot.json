@@ -55,6 +55,19 @@
       "DownstreamPathTemplate": "/api/Aeronave",
       "key": "Aeronave"
     }
+    ,
+    {
+      "UpstreamPathTemplate": "/api/Vuelo",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "Vuelosapi.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Vuelo",
+      "key": "Vuelo"
+    }
   ],
   "GlobalConfiguration": {
     "BaseUrl": "https://localhost:44388"
