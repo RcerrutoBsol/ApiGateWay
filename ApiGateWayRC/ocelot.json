@@ -54,8 +54,7 @@
       ],
       "DownstreamPathTemplate": "/api/Aeronave",
       "key": "Aeronave"
-    }
-    ,
+    },
     {
       "UpstreamPathTemplate": "/api/Vuelo",
       "UpstreamHttpMethod": [ "GET", "POST" ],
@@ -67,6 +66,18 @@
       ],
       "DownstreamPathTemplate": "/api/Vuelo",
       "key": "Vuelo"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Reserva",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ReservaApi.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Reserva",
+      "key": "Reserva"
     }
   ],
   "GlobalConfiguration": {
