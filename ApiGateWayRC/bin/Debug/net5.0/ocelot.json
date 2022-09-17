@@ -29,7 +29,31 @@
         }
       ],
       "DownstreamPathTemplate": "/posts",
-        "key": "posts"
+      "key": "posts"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Tripulacion",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "tripulacion20220916123257.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Tripulacion",
+      "key": "Tripulacion"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Aeronave",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aeronaveapi.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Aeronave",
+      "key": "Aeronave"
     }
   ],
   "GlobalConfiguration": {
