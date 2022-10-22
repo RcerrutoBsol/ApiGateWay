@@ -17,7 +17,7 @@
         }
       ],
       "DownstreamPathTemplate": "/users",
-        "key": "users"
+      "key": "users"
     },
     {
       "UpstreamPathTemplate": "/api/posts",
@@ -36,12 +36,60 @@
       "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamHostAndPorts": [
         {
-          "Host": "tripulacion20220916123257.azurewebsites.net",
+          "Host": "tripulacion20221022011231.azurewebsites.net",
           "Port": 443
         }
       ],
       "DownstreamPathTemplate": "/api/Tripulacion",
       "key": "Tripulacion"
+    },
+    {
+      "UpstreamPathTemplate": "/api/TIntegrantes",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "tripulacion20221022011231.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/TIntegrantes",
+      "key": "Tripulacion"
+    },
+    {
+      "UpstreamPathTemplate": "/api/AsignarTripulacion",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "tripulacion20221022011231.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/AsignarTripulacion",
+      "key": "Tripulacion"
+    },
+    {
+      "UpstreamPathTemplate": "/api/CancelarTripulacion",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "tripulacion20221022011231.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/CancelarTripulacion",
+      "key": "Tripulacion"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Aeronave/{path}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "aeronaveapi.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Aeronave/{path}",
+      "key": "Aeronave"
     },
     {
       "UpstreamPathTemplate": "/api/Aeronave",
@@ -55,32 +103,142 @@
       "DownstreamPathTemplate": "/api/Aeronave",
       "key": "Aeronave"
     },
+    //{
+    //  "UpstreamPathTemplate": "/api/Aeronave/getall",
+    //  "UpstreamHttpMethod": [ "GET", "POST" ],
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "aeronaveapi.azurewebsites.net",
+    //      "Port": 443
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/api/Aeronave/getall",
+    //  "key": "Aeronave"
+    //},https://msvuelos.azurewebsites.net/api/Vuelo
     {
-      "UpstreamPathTemplate": "/api/Vuelo",
+      "UpstreamPathTemplate": "/apiVuelo/Vuelo/{path}",
       "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamHostAndPorts": [
         {
-          "Host": "Vuelosapi.azurewebsites.net",
+          "Host": "msvuelos.azurewebsites.net",
           "Port": 443
         }
       ],
-      "DownstreamPathTemplate": "/api/Vuelo",
+      "DownstreamPathTemplate": "/apiVuelo/Vuelo/{path}",
       "key": "Vuelo"
     },
     {
-      "UpstreamPathTemplate": "/api/Reserva",
+      "UpstreamPathTemplate": "/apiVuelo/Tripulacion/ListarTripulacion",
       "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamHostAndPorts": [
         {
-          "Host": "ReservaApi.azurewebsites.net",
+          "Host": "msvuelos.azurewebsites.net",
           "Port": 443
         }
       ],
-      "DownstreamPathTemplate": "/api/Reserva",
+      "DownstreamPathTemplate": "/apiVuelo/Tripulacion/ListarTripulacion",
+      "key": "Vuelo"
+    },
+    {
+      "UpstreamPathTemplate": "/apiVuelo/Tripulacion/RegistrarTripulacion",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msvuelos.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/apiVuelo/Tripulacion/RegistrarTripulacion",
+      "key": "Vuelo"
+    },
+    {
+      "UpstreamPathTemplate": "/apiVuelo/Aeronave/ListarAeronaves",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msvuelos.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/apiVuelo/Aeronave/ListarAeronaves",
+      "key": "Vuelo"
+    },
+    {
+      "UpstreamPathTemplate": "/apiVuelo/Aeronave/RegistrarAeronaves",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msvuelos.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/apiVuelo/Aeronave/RegistrarAeronaves",
+      "key": "Vuelo"
+    },
+    {
+      "UpstreamPathTemplate": "/apiVuelo/Aeropuerto/{path}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "msvuelos.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/apiVuelo/Aeropuerto/{path}",
+      "key": "Vuelo"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Cliente/BuscarClientes",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "reservams.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Cliente/BuscarClientes",
       "key": "Reserva"
-    }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Reserva/{path}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "reservams.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Reserva/{path}",
+      "key": "Reserva"
+    },
+    {
+
+      "UpstreamPathTemplate": "/api/Vuelo/BuscarVuelos",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "reservams.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Vuelo/BuscarVuelos",
+      "key": "Reserva"
+    },
+    {
+
+      "UpstreamPathTemplate": "/api/Checkin/{path}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "gvmreserva.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Checkin/{path}",
+      "key": "CkeckIn"
+    }   
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:44388"
+    "BaseUrl": "https://apigatewayrc20221022015610.azurewebsites.net/"
   }
 }
